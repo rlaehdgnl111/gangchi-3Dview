@@ -2,29 +2,74 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>3D 모델 뷰어</title>
+  <title>10107 김동휘</title>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
   <style>
     body {
       margin: 0;
       background: #111;
+      color: #fff;
+      font-family: Arial, sans-serif;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
     }
     model-viewer {
-      width: 90%;
-      height: 90%;
+      width: 80%;
+      height: 400px;
+      margin-top: 20px;
+    }
+    section {
+      max-width: 800px;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #fff;
     }
   </style>
 </head>
 <body>
-  <model-viewer src="model.glb"
-                alt="3D 모델"
-                auto-rotate
-                camera-controls
+  <h1>강치</h1>
+
+  <model-viewer src="model.glb" 
+                alt="강치 3D 모델" 
+                auto-rotate 
+                camera-controls 
                 background-color="#111">
   </model-viewer>
+
+  <section>
+    <h2>분류</h2>
+    <p>학명: <i>Zalophus japonicus</i><br>
+       바다사자과에 속하는 멸종한 해양 포유류이다.</p>
+
+    <h2>서식지</h2>
+    <p>과거 독도, 울릉도, 일본 홋카이도부터 규슈, 러시아 연해주에 걸쳐 널리 서식하였다.</p>
+
+    <h2>특징</h2>
+    <p>강치는 가늘고 긴 몸에 짧은 귀와 꼬리를 지닌 것이 특징이다.<br>
+       수컷은 어두운 회색 털가죽을 가지고 있으며 몸길이는 약 2.5m, 
+       체중은 450~560kg까지 자랐다.<br>
+       암컷은 몸길이 약 1.6m로 훨씬 작았으며, 수컷보다 밝은 털빛을 띠었다.</p>
+      
+    <h2>먹이</h2>
+    <p>정어리, 대구, 꽁치 같은 어류와 오징어 등 두족류를 주로 먹었다.</p>
+
+    <h2>멸종</h2>
+    <p>20세기 초 일본의 무분별한 남획으로 개체 수가 급격히 줄었다.<br>
+       당시 일본은 독도와 울릉도에서 서식하던 강치를 암수와 새끼 구분 없이 포획하였다.<br>
+       강치의 지방은 기름으로, 살과 뼈는 비료로, 가죽은 가방과 옷감으로 쓰였으며<br>
+       가치가 없다고 여긴 새끼 강치는 서커스단에 팔려가기도 했다.<br>
+       이로 인해 강치는 1950년대 독도에서 마지막 기록을 남긴 후 멸종하였다.</p>
+
+    <h2>문화적 의미</h2>
+    <p>강치는 단순한 동물이 아니라 독도의 생태적 상징이자 역사적 증거이다.<br>
+       조선 시대 문헌에도 ‘독도에는 강치가 많다’는 기록이 남아 있으며,<br>
+       이는 오랫동안 사람들이 독도와 강치를 함께 인식해 왔음을 보여준다.<br>
+       강치는 또한 독도의 풍요로움과 인간 탐욕이 불러온 비극을 동시에 상징한다.<br>
+       오늘날 멸종한 강치는 ‘독도의 주인이 누구인가’를 말해주는 중요한 근거이자,<br>
+       자연과 생태를 지켜야 한다는 교훈을 남긴 존재로 기억된다.</p>
+  </section>
 </body>
 </html>
