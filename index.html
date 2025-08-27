@@ -20,37 +20,47 @@
       padding: 20px;
       line-height: 1.6;
     }
+
     h1, h2 {
       color: #fff;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 5px;
+    }
+
+    .contact-box {
+      margin-top: 20px;
+      padding: 10px;
+      border-top: 1px solid #fff;
+      text-align: left;
     }
 
     /* 기본 스타일 (모바일 우선) */
     model-viewer {
       width: 100%;
       max-width: 800px;
-      height: 600px;
+      height: 400px;
       margin-top: 20px;
     }
 
-/* 태블릿 이상 화면 */
+    /* 태블릿 이상 화면 */
     @media (min-width: 769px) {
       model-viewer {
-      width: 80%;
-      height: 500px;
+        width: 80%;
+        height: 500px;
       }
     }
 
-/* 데스크톱 큰 화면 */
+    /* 데스크톱 큰 화면 */
     @media (min-width: 1200px) {
       model-viewer {
-      width: 800px;
-      height: 600px;
+        width: 800px;
+        height: 600px;
       }
     }
-
   </style>
-
-
 </head>
 <body>
   <model-viewer src="model.glb" 
@@ -61,8 +71,8 @@
   </model-viewer>
 
   <section>
-    <h1>강치</h1>
-    <pre></pre>
+    <h1>강치</h1><br>
+    <div class="contact-box"></div>
     <h2>분류</h2>
     <p>학명: <i>Zalophus japonicus</i><br>
        바다사자과에 속하는 멸종한 해양 포유류이다.</p>
@@ -82,7 +92,7 @@
     <h2>멸종</h2>
     <p>20세기 초 일본의 무분별한 남획으로 개체 수가 급격히 줄었다.<br>
        당시 일본은 독도와 울릉도에서 서식하던 강치를 암수와 새끼 구분 없이 포획하였다.<br>
-       강치의 지방은 기름으로, 살과 뼈는 비료로, 가죽은 가방과 옷감으로 쓰였으며<br>
+       강치의 지방은 기름으로, 살과 뼈는 비료로, 가죽은 가방과 옷감으로 쓰였으며,<br>
        가치가 없다고 여긴 새끼 강치는 서커스단에 팔려가기도 했다.<br>
        이로 인해 강치는 1950년대 독도에서 마지막 기록을 남긴 후 멸종하였다.</p>
 
@@ -94,14 +104,9 @@
        오늘날 멸종한 강치는 ‘독도의 주인이 누구인가’를 말해주는 중요한 근거이자,<br>
        자연과 생태를 지켜야 한다는 교훈을 남긴 존재로 기억된다.</p>
 
-    <pre></pre>
-    <pre></pre>
-    
-    <h2>문의 : dhdonghwi226@naver.com</h2>
+    <div class="contact-box">
+      <h3>문의 : <a href="mailto:dhdonghwi226@naver.com" style="color:#fff; text-decoration:none;">dhdonghwi226@naver.com</a></h3>
+    </div>
   </section>
 </body>
 </html>
-
-
-
-
