@@ -20,17 +20,15 @@
       align-items: center;
     }
 
-    /* 모델뷰어 */
     model-viewer {
       width: 100%;
-      max-width: 900px; /* PC 최대 폭 */
-      height: 50vh; /* 모바일에서 화면 절반 차지 */
+      max-width: 900px;
+      height: 50vh; /* 화면 상단 절반 차지 */
       min-height: 300px;
       aspect-ratio: 4 / 3;
       margin-bottom: 20px;
     }
 
-    /* 텍스트 영역 */
     section {
       width: 95%;
       max-width: 800px;
@@ -40,17 +38,17 @@
     }
 
     h1 {
-      font-size: 2.5em; /* 모바일에서도 크게 */
+      font-size: 2.5em;
       margin-bottom: 20px;
     }
 
     h2 {
-      font-size: 2em; /* 소제목 크게 */
+      font-size: 2em;
       margin-bottom: 15px;
     }
 
     p {
-      font-size: 1.3em; /* 본문 글자 크게 */
+      font-size: 1.3em;
       margin-bottom: 20px;
     }
 
@@ -65,7 +63,7 @@
     /* 모바일 최적화 */
     @media (max-width: 768px) {
       model-viewer {
-        height: 60vh; /* 모바일에서 더 크게 */
+        height: 60vh; /* 화면 높이의 60% */
       }
 
       section {
@@ -74,15 +72,15 @@
       }
 
       h1 {
-        font-size: 2em;
+        font-size: 4em; /* 기존 2배 정도 */
       }
 
       h2 {
-        font-size: 1.6em;
+        font-size: 3.2em;
       }
 
       p, .contact-box {
-        font-size: 1.2em;
+        font-size: 2.4em;
       }
     }
   </style>
