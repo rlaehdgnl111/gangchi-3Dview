@@ -5,28 +5,31 @@
   <title>10107 김동휘</title>
   <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
   <style>
-    body {
+    /* 기본 스타일 */
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       background: #111;
       color: #fff;
       font-family: Arial, sans-serif;
+      overflow-x: hidden; /* 가로 스크롤 방지 */
+    }
+
+    body {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-
-    #canvas {
-      background: #dcd7c9;
-      display: block;
-      margin: 0 auto;
+      min-height: 100%;
     }
 
     section {
-      width: 90%;
+      width: 100%;
       max-width: 800px;
       padding: 20px;
       line-height: 1.6;
       box-sizing: border-box;
+      overflow-x: auto; /* 내용이 길면 가로 스크롤 가능 */
     }
 
     h1, h2 {
@@ -52,16 +55,10 @@
     }
 
     /* 반응형 */
-    @media (min-width: 769px) {
-      #canvas {
-        width: 600px;
-        height: 600px;
-      }
-    }
-
     @media (max-width: 768px) {
       section {
-        padding: 15px;
+        width: 100%;       /* 화면 거의 꽉 차게 */
+        padding: 15px 10px; /* 위아래 15px, 좌우 10px */
       }
       h1 {
         font-size: 1.5em;
@@ -71,6 +68,13 @@
       }
       p {
         font-size: 0.95em;
+      }
+    }
+
+    @media (min-width: 769px) {
+      #canvas {
+        width: 600px;
+        height: 600px;
       }
     }
   </style>
@@ -86,6 +90,7 @@
   <section>
     <h1>강치</h1>
     <div class="contact-box"></div>
+
     <h2>분류</h2>
     <p>학명: <i>Zalophus japonicus</i><br>
        바다사자과에 속하는 멸종한 해양 포유류이다.</p>
