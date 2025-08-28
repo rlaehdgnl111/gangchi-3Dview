@@ -40,18 +40,18 @@
     }
 
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      font-size: 28vw;
+      line-height: 1.1;
     }
 
     h2 {
-      font-size: 2em;
-      margin-bottom: 15px;
+      font-size: 18vw;
+      line-height: 1.1;
     }
 
-    p {
-      font-size: 1.3em;
-      margin-bottom: 20px;
+    p, .contact-box {
+      font-size: 6vw;
+      line-height: 1.4;
     }
 
     .contact-box {
@@ -63,10 +63,12 @@
     }
 
     /* 모바일 최적화 */
-    @media (max-width: 768px) {
-      model-viewer {
-        height: 60vh;
-      }
+  @media (max-width: 768px) {
+  section {
+    width: 100%;
+    max-width: 100%; /* 폭 제한 제거 */
+    padding: 10px 5px;
+  }
 
       section {
         width: 95%;
@@ -151,3 +153,4 @@
   </section>
 </body>
 </html>
+
