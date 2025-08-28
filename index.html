@@ -8,7 +8,6 @@
     html, body {
       margin: 0;
       padding: 0;
-      height: 100%;
       background: #111;
       color: #fff;
       font-family: Arial, sans-serif;
@@ -19,32 +18,40 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100%;
     }
 
+    /* 모델뷰어 */
+    model-viewer {
+      width: 100%;
+      height: 33vh; /* 화면 높이의 1/3 */
+      min-height: 200px; /* 너무 작아지지 않도록 */
+      aspect-ratio: 4 / 3;
+      margin-bottom: 10px;
+    }
+
+    /* 텍스트 영역 */
     section {
       width: 100%;
-      max-width: 900px; /* PC에서 더 크게 */
-      padding: 20px;
-      line-height: 1.8; /* 글자 간격 넓힘 */
+      max-width: 900px;
+      padding: 15px 20px;
+      line-height: 1.6;
       box-sizing: border-box;
-      overflow-x: auto;
-      font-size: 1.1em; /* 전체 글자 키움 */
+      overflow-x: hidden;
     }
 
     h1 {
-      font-size: 2.5em; /* 제목 크게 */
+      font-size: 2em;
       margin-bottom: 15px;
     }
 
     h2 {
-      font-size: 2em; /* 소제목 크게 */
+      font-size: 1.5em;
       margin-bottom: 10px;
     }
 
     p {
-      margin-bottom: 15px;
       font-size: 1.1em;
+      margin-bottom: 15px;
     }
 
     .contact-box {
@@ -55,31 +62,26 @@
       font-size: 1.1em;
     }
 
-    model-viewer {
-      width: 100%;
-      max-width: 900px; /* PC에서 크게 */
-      aspect-ratio: 4 / 3;
-      margin-top: 20px;
-    }
-
     /* 모바일 최적화 */
     @media (max-width: 768px) {
+      model-viewer {
+        height: 33vh; /* 모바일에서도 화면 1/3 */
+      }
+
       section {
         padding: 15px 10px;
-        font-size: 1.2em; /* 모바일에서 글자 더 키움 */
       }
+
       h1 {
-        font-size: 2em;
+        font-size: 1.8em;
       }
+
       h2 {
-        font-size: 1.6em;
+        font-size: 1.4em;
       }
-      p {
-        font-size: 1.1em;
-      }
-      model-viewer {
-        width: 100%;
-        aspect-ratio: 4 / 3;
+
+      p, .contact-box {
+        font-size: 1em;
       }
     }
   </style>
@@ -94,7 +96,6 @@
 
   <section>
     <h1>강치</h1>
-    <div class="contact-box"></div>
 
     <h2>분류</h2>
     <p>학명: <i>Zalophus japonicus</i><br>
